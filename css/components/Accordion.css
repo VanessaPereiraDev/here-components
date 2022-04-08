@@ -1,0 +1,258 @@
+.accordion-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow:auto;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordion_button {
+  display: block;
+  cursor: pointer;
+  transition: background 0.2s;
+  background: #D3D3D3 0% 0% no-repeat padding-box;
+  width: 1138px;
+  height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 43px;
+  border: none;
+}
+
+.accordion_button1 {
+  display: block;
+  cursor: pointer;
+  transition: background 0.2s;
+  background: #D3D3D3 0% 0% no-repeat padding-box;
+  width: 1138px;
+  height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 43px;
+  border: none;
+}
+
+.accordion_button h1{
+  font: normal normal 600 35px/42px Silka;
+  color: #0A1C50;
+}
+
+.accordion_button1 h1{
+  font: normal normal 600 35px/42px Silka;
+  color: #0A1C50;
+}
+
+.accordion_button::after {
+  content: url('../../assets/img/up arrow.svg');
+  float: right;
+}
+
+.accordion_button1::after {
+  content: url('../../assets/img/up arrow.svg');
+  float: right;
+}
+
+.accordion_button--active + .accordion_content { display: block; }
+.accordion_button--active::after { transform: scaleY(-1);}
+.accordion_button1--active::after { transform: scaleY(-1);}
+
+.accordion_content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s;
+  width: 1091px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.accordion_content p {
+  font: normal normal 600 18px/28px Silka;
+  color: #0A1C50;
+  margin-bottom: 20px;
+}
+
+.accordion_content .diff {
+  font: normal normal normal 18px/28px Silka;
+  color: #0A1C50;
+}
+
+.title1 h1 {
+  font: normal normal normal 35px/42px Silka;
+  color: #0A1C5;
+}
+
+/*
+.subtitle #inverter {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .title {
+    overflow:auto;
+  }
+  
+  .title1 {
+    overflow:auto;
+  }
+
+  .accordion_button {
+    width: 420px;
+    height: 62px;
+    padding-left: 18px;
+    padding-right: 23px;
+  }
+
+  .accordion_button1 {
+    width: 420px;
+    height: 62px;
+    padding-left: 18px;
+    padding-right: 23px;
+  }
+
+  .accordion_button h1{
+    font: normal normal 600 25px/22px Silka;
+  }
+
+  .accordion_button1 h1{
+    font: normal normal 600 25px/22px Silka;
+  }
+
+  .accordion_content {
+    width: 380px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  .accordion_content p {
+    font: normal normal 600 14px/22px Silka;
+    margin-bottom: 10px;
+  }
+
+  .accordion_content .diff {
+    font: normal normal normal 14px/22px Silka;
+  }
+
+  .title1 h1 {
+    font: normal normal normal 25px/22px Silka;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .title {
+    overflow:auto;
+  }
+
+  .title1 {
+    overflow:auto;
+  }
+
+  .accordion_button {
+    width: 680px;
+    height: 72px;
+    padding-left: 20px;
+    padding-right: 25px;
+  }
+
+  .accordion_button1 {
+    width: 680px;
+    height: 72px;
+    padding-left: 20px;
+    padding-right: 25px;
+  }
+
+  .accordion_button h1{
+    font: normal normal 600 27px/22px Silka;
+  }
+
+  .accordion_button1 h1{
+    font: normal normal 600 27px/22px Silka;
+  }
+
+  .accordion_content {
+    width: 630px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  .accordion_content p {
+    font: normal normal 600 16px/22px Silka;
+    margin-bottom: 15px;
+  }
+
+  .accordion_content .diff {
+    font: normal normal normal 16px/22px Silka;
+  }
+
+  .title1 h1 {
+    font: normal normal normal 27px/22px Silka;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title {
+    overflow:auto;
+  }
+
+  .title1 {
+    overflow:auto;
+  }
+
+  .accordion_button {
+    width: 800px;
+    height: 77px;
+    padding-left: 25px;
+    padding-right: 30px;
+  }
+
+  .accordion_button1 {
+    width: 800px;
+    height: 77px;
+    padding-left: 25px;
+    padding-right: 30px;
+  }
+
+  .accordion_button h1{
+    font: normal normal 600 32px/24px Silka;
+  }
+
+  .accordion_button1 h1{
+    font: normal normal 600 32px/24px Silka;
+  }
+
+  .accordion_content {
+    width: 730px;
+    margin-top: 42px;
+    margin-bottom: 28px;
+  }
+
+  .accordion_content p {
+    font: normal normal 600 18px/24px Silka;
+    margin-bottom: 20px;
+  }
+
+  .accordion_content .diff {
+    font: normal normal normal 18px/24px Silka;
+  }
+
+  .title1 h1 {
+    font: normal normal normal 32px/24px Silka;
+  }
+}
